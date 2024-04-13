@@ -80,12 +80,13 @@ useEffect(() =>{
     </>
   );
 }
+
 export default App;
 
 export const RouteControl = ({ children }) => {
   if (localStorage.getItem("user")) {
     return children;
   } else {
-    return <Navigate to="/login" />;
+    return <Navigate to="/login"/>;
   }
 };

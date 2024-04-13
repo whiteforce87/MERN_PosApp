@@ -13,7 +13,7 @@ function CreateBill({isModalOpen, setIsModalOpen}) {
 
     const onFinish= async (values) =>{
         try{
-            const res = await fetch(process.env.REACT_APP_SERVER_URL + "/api/bills/add-bill",{
+            const res = await fetch(process.env.REACT_APP_SERVER_URL + "api/bills/add-bill",{
             method:"POST",
             body:JSON.stringify({
                 ...values,
