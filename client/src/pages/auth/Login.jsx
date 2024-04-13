@@ -15,7 +15,7 @@ function Login() {
     const login = async () => {
       setLoading(true);
       try {
-        const res = await fetch(process.env.REACT_APP_SERVER_URL + "api/auth/login", {
+        const res = await fetch(process.env.REACT_APP_SERVER_URL + "/api/auth/login", {
           method: "POST",
           body: JSON.stringify(values),
           headers: { "Content-Type": "application/json; charset=UTF-8" },
