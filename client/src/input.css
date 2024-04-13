@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    @apply bg-gray-50;
+
+  
+}
+
+.ant-btn-primary {
+  background-color: #1677ff;
+}
+
+.menulink .anticon{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+@media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
+  .categories::-webkit-scrollbar {
+    display: none;
+  }
+
+  .products::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
