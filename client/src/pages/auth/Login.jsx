@@ -99,7 +99,7 @@ function Login() {
             </Form.Item>
           </Form>
           <div className="flex justify-center absolute left-0 bottom-10 w-full">
-            Henüz bit hesabınız yok mu? &nbsp;{" "}
+            Henüz bir hesabınız yok mu? &nbsp;{" "}
             <Link to="/register" className="text-blue-600">
               Kaydol
             </Link>
