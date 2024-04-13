@@ -85,8 +85,8 @@ export default function StatisticsPage() {
       <Header />
       <h1 className="text-4xl bold text-center mb-4">İstatisklerim</h1>
       {data ? (
-        <div className="px-6 md:pb-0 pb-20">
-          <div className="statistic-section">
+        <div className="statistic-page px-6 md:pb-0 pb-20  overflow-auto">
+          <div className="statistic-section  overflow-auto">
             <h2 className="text-lg">
               Hoş geldin{" "}
               <span className="text-green-700 font-bold text-x1">
@@ -94,7 +94,7 @@ export default function StatisticsPage() {
               </span>
               .
             </h2>
-            <div className="statistic-cards grid xl:grid-cols-4 md:grid-cols-2  my-10 md:gap-10 gap-4">
+            <div className="grid xl:grid-cols-4 md:grid-cols-2  my-10 md:gap-10 gap-4  overflow-auto">
               <StatisticCard
                 title={"Toplam Müşteri"}
                 amount={data?.length}
@@ -116,7 +116,7 @@ export default function StatisticsPage() {
                 img={"images/product.png"}
               />
             </div>
-            <div className="flex justify-between gap-10 lg:flex-row flex-col items-center">
+            <div className="flex justify-between gap-10 lg:flex-row flex-col items-center overflow-auto" >
               <div className="lg:w-1/2 lg:h-72 h-72">
                 <Area {...config} />
               </div>
