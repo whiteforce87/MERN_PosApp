@@ -1,1 +1,1 @@
-# MERN_PosApp
+# MERN_Fatih's PosApp
