@@ -1,5 +1,5 @@
 import { Badge, Input, message } from "antd";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation, Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import {
   SearchOutlined,
@@ -16,11 +16,12 @@ const Header = ({setSearch}) => {
   const cart = useSelector((state) => state.cart)
   const {pathname} = useLocation();
   const navigate = useNavigate();
+  
   const logout = () =>{
     if(window.confirm("Çıkış yapmak istediğinize emin misiniz?")){
       localStorage.removeItem("user");
+      Navigate("/login")
       message.success("Çıkış işlemi başarılı")
-      navigate("/login")
     }
   }
 
