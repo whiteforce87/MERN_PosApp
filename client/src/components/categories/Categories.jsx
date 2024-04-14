@@ -22,7 +22,7 @@ const Categories = ({categories,setCategories, setFiltered, products}) => {
       setFiltered(products.filter(product => product.category === categoryTitle))
     }
 
-  },[products, setFiltered, categoryTitle])
+  },[products, setFiltered, categoryTitle,categories])
 
 
   return (

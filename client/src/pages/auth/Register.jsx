@@ -29,10 +29,15 @@ function Register() {
           setLoading(false)
 
         }
+        if(res.status === 409){
+          message.error("Girilen mail adresi kullanılıyor");
+          setLoading(false)
+        }
 
       }catch(error){
         message.error("Birşeyler yanlış gitti")
         console.log(error)
+
       }
 
     }
