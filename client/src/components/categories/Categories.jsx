@@ -13,10 +13,15 @@ const Categories = ({categories,setCategories, setFiltered, products}) => {
 
   useEffect(() => {
     if(categoryTitle === "Tümü"){
+      const index = categories.findIndex(category => category.title === categoryTitle)
+      const item = categories[index]
+      categories.splice(index,1)
+      categories.unshift(item)
       setFiltered(products)
     }else{
       setFiltered(products.filter(product => product.category === categoryTitle))
     }
+
   },[products, setFiltered, categoryTitle])
 
 
